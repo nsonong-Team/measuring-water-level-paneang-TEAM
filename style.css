@@ -666,3 +666,153 @@ body {
     height: 10px;
     border-radius: 50%;
 }
+
+/* ================= MOBILE (<= 768px) ================= */
+@media (max-width: 768px) {
+
+    html, body {
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    .wrap {
+        height: auto;
+    }
+
+    .scene {
+        min-height: 100vh;
+    }
+
+    /* HEADER */
+    .hdr {
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    .htitle {
+        font-size: 12px;
+    }
+
+    .hsub {
+        font-size: 9px;
+    }
+
+    .hlogo {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .hk .hkn {
+        font-size: 14px;
+    }
+
+    .hk .hkl {
+        font-size: 7px;
+    }
+
+    /* SCALE STATION */
+    .gs {
+        transform: scale(0.75);
+        transform-origin: bottom center;
+    }
+
+    /* CARD */
+    .scard {
+        min-width: 120px;
+        padding: 8px;
+    }
+
+    .sn { font-size: 10px; }
+    .sl, .sd { font-size: 8px; }
+
+    .ss {
+        font-size: 8px;
+        padding: 2px 8px;
+    }
+
+    /* RULER */
+    .ruler {
+        width: 22px;
+        height: 110px;
+    }
+
+    .rnum {
+        font-size: 6px;
+        right: 12px;
+    }
+
+    /* RIVER */
+    .river {
+        height: 85px;
+        bottom: 140px;
+    }
+
+    .rbed {
+        height: 45px;
+        bottom: 95px;
+    }
+
+    .rname {
+        font-size: 18px;
+        letter-spacing: 6px;
+    }
+
+    /* DISTANCE */
+    .dist-box {
+        font-size: 9px;
+        padding: 2px 8px;
+    }
+
+    .travel-tag {
+        font-size: 8px;
+        padding: 2px 8px;
+    }
+
+    /* LEGEND */
+    .legend {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 10px;
+    }
+
+    .leg-t { font-size: 9px; }
+    .leg-i { font-size: 8px; }
+
+    /* HINT */
+    .hint {
+        font-size: 9px;
+        padding: 5px 14px;
+        bottom: 10px;
+    }
+}
+
+
+/* ================= SMALL MOBILE (<= 480px) ================= */
+@media (max-width: 480px) {
+
+    .gs {
+        transform: scale(0.65);
+    }
+
+    .htitle {
+        display: none;
+    }
+
+    .hsub {
+        font-size: 8px;
+    }
+
+    .rname {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+
+    .scard {
+        min-width: 100px;
+    }
+
+    .hint {
+        font-size: 8px;
+    }
+}
